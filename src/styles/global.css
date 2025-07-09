@@ -2,9 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 :root {
+  font-size: 62.5%;
+
   --content-primary: #ffffff;
   --content-secondary: #98959d;
   --content-tertiary: #666666;
@@ -27,4 +33,15 @@
   --accent-yellow-light: #756e1b;
   --accent-orange: #f09102;
   --accent-orange-light: #75501b;
+
+  --ff-inter-tight: "Inter Tight", sans-serif;
+  --ff-inter: "Inter", sans-serif;
+
+  --title: 700 2.4rem/3.2 var(--ff-inter-tight);
+  --paragraph-medium: 500 1.4rem/2.4 var(--ff-inter);
+  --paragraph-small: 500 1.2rem/1.6 var(--ff-inter);
+  --label-large: 700 1.6rem/2.4 var(--ff-inter);
+  --label-medium: 700 1.4rem/2.4 var(--ff-inter);
+  --label-small: 700 1.2rem/1.6 var(--ff-inter);
+  --link: 500 1.2rem/1.6 var(--ff-inter);
 }

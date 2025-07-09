@@ -1,5 +1,5 @@
 {
-  "name": "PetShopAppointment",
+  "name": "PetShop Appointment",
   "version": "1.0.0",
   "description": "Aplicação web de agendamento para pet shop",
   "author": "Cicero Eduardo",
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "dayjs": "^1.11.0",
+    "dotenv": "^17.1.0",
     "json-server": "^1.0.0-alpha.21"
   },
   "devDependencies": {
