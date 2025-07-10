@@ -16,7 +16,7 @@
   --content-tertiary: #666666;
   --content-brand: #9282fa;
 
-  --background-primary: #151515;
+  --background-primary: #14151d;
   --background-secondary: #1e1e1e;
   --background-tertiary: #23242c;
   --background-brand: #9282fa;
@@ -44,4 +44,48 @@
   --label-medium: 700 1.4rem/2.4 var(--ff-inter);
   --label-small: 700 1.2rem/1.6 var(--ff-inter);
   --link: 500 1.2rem/1.6 var(--ff-inter);
+}
+
+body {
+  background: var(--background-primary);
+  color: var(--content-primary);
+}
+
+.Logo {
+  width: 15rem;
+  height: 4.4rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--border-primary);
+  border-bottom-right-radius: 1rem;
+
+  img {
+    width: 11rem;
+    height: 2.4rem;
+  }
+}
+
+.NewAppointment {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 0;
+
+  button {
+    width: 21rem;
+    height: 4.4rem;
+    border: none;
+    border-radius: 1rem;
+    font: var(--label-large);
+    background: var(--content-brand);
+    color: var(--background-primary);
+    filter: drop-shadow(0 0 3rem #9282FA50);
+  }
 }
