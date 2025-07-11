@@ -15,6 +15,7 @@
   --content-secondary: #98959d;
   --content-tertiary: #666666;
   --content-brand: #9282fa;
+  --content-brand-hover: #bdb4fa;
 
   --background-primary: #14151d;
   --background-secondary: #1e1e1e;
@@ -37,7 +38,7 @@
   --ff-inter-tight: "Inter Tight", sans-serif;
   --ff-inter: "Inter", sans-serif;
 
-  --title: 700 2.4rem/3.2 var(--ff-inter-tight);
+  --title: 700 2.4rem/1.2 var(--ff-inter-tight);
   --paragraph-medium: 500 1.4rem/2.4 var(--ff-inter);
   --paragraph-small: 500 1.2rem/1.6 var(--ff-inter);
   --label-large: 700 1.6rem/2.4 var(--ff-inter);
@@ -72,20 +73,18 @@ body {
   }
 }
 
-.NewAppointment {
+.newAppointment {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
   z-index: 0;
+}
 
-  button {
-    width: 21rem;
-    height: 4.4rem;
-    border: none;
-    border-radius: 1rem;
-    font: var(--label-large);
-    background: var(--content-brand);
-    color: var(--background-primary);
-    filter: drop-shadow(0 0 3rem #9282FA50);
-  }
+h1 {
+  font: var(--title);
+}
+
+p {
+  font: var(--paragraph-medium);
+  color: var(--content-secondary);
 }

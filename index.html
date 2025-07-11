@@ -28,26 +28,44 @@
     </div>
 
     <main>
-      <!-- <div class="Title">
+      <header>
+        <div class="Title">
           <h1>Sua agenda</h1>
           <p>
             Aqui você pode ver todos os clientes e serviços agendados para hoje.
           </p>
         </div>
-        <div>
-          <input type="date" name="data" id="data" />
-        </div> -->
+        <div class="searchDate">
+          <input type="date" name="date" id="date" />
+        </div>
+      </header>
 
       <article>
         <section>
           <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <span></span>
+            <img src="./src/assets/sun.svg" alt="Sun" />
+            <h3>Manhã</h3>
+            <span>09h-12h</span>
           </div>
 
           <div>
-            <h3></h3>
+            <span>09:00</span>
+            <span>Thor/Fernanda Costa</span>
+            <span>Vacinação</span>
+
+            <button>Remover agendamento</button>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <img src="./src/assets/cloud.svg" alt="Cloud" />
+            <h3>Tarde</h3>
+            <span>13h-18h</span>
+          </div>
+
+          <div>
+            <span></span>
             <span></span>
             <span></span>
 
@@ -57,29 +75,13 @@
 
         <section>
           <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <span></span>
+            <img src="./src/assets/moon.svg" alt="Moon" />
+            <h3>Noite</h3>
+            <span>19h-21h</span>
           </div>
 
           <div>
-            <h3></h3>
             <span></span>
-            <span></span>
-
-            <button>Remover agendamento</button>
-          </div>
-        </section>
-
-        <section>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <span></span>
-          </div>
-
-          <div>
-            <h3></h3>
             <span></span>
             <span></span>
 
@@ -94,7 +96,7 @@
         </div>
 
         <div>
-          <h2>Agende um atendimento</h2>
+          <h1>Agende um atendimento</h1>
           <p>Preencha os dados do cliente para realizar o agendamento</p>
         </div>
 
@@ -157,7 +159,7 @@
       </article>
     </main>
 
-    <div class="NewAppointment">
+    <div class="newAppointment">
       <button>Novo Agendamento</button>
     </div>
   </body>
