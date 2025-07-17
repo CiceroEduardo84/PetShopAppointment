@@ -1,0 +1,100 @@
+main {
+  width: 87rem;
+  margin: auto;
+  padding: 8rem;
+
+  header {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.containerTurns {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.boxTurn {
+  background: var(--background-tertiary);
+  border-radius: 1rem;
+  padding: 0 2rem;
+
+  .turn {
+    padding: 1.2rem 0;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 0.6px var(--border-divisor);
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    h3 {
+      margin-left: 1.2rem;
+    }
+
+    span {
+      margin-left: auto;
+      font: var(--label-large);
+      color: var(--content-secondary);
+    }
+  }
+}
+
+.boxAppointments {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.2rem;
+
+  .cardAppointment {
+    height: 4.8rem;
+    display: grid;
+    grid-template-areas: "A B C D";
+    grid-template-columns: 4.5rem 1fr 1fr auto;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 0 1.2rem;
+    border-bottom: solid 0.6px var(--border-divisor);
+
+    .time {
+      grid-area: A;
+      font: var(--label-small);
+    }
+
+    .name,
+    .description,
+    .remove {
+      font: var(--paragraph-small);
+      color: var(--content-secondary);
+    }
+
+    .name {
+      grid-area: B;
+
+      strong {
+        font: var(--label-small);
+        color: var(--content-primary);
+      }
+    }
+
+    .description {
+      grid-area: C;
+    }
+
+    .remove {
+      grid-area: D;
+      background: none;
+      border: none;
+    }
+  }
+
+  .cardAppointment:last-child {
+    border-bottom: none;
+  }
+}

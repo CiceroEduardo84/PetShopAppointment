@@ -40,57 +40,79 @@
         </div>
       </header>
 
-      <article>
-        <section>
-          <div>
+      <article class="containerTurns">
+        <section class="boxTurn">
+          <div class="turn">
             <img src="./src/assets/sun.svg" alt="Sun" />
             <h3>Manhã</h3>
             <span>09h-12h</span>
           </div>
 
-          <div>
-            <span>09:00</span>
-            <span>Thor/Fernanda Costa</span>
-            <span>Vacinação</span>
+          <div class="boxAppointments">
+            <div class="cardAppointment">
+              <span class="time">09:00</span>
+              <span class="name"><strong>Thor</strong>/Fernanda Costa</span>
+              <span class="description">Vacinação</span>
 
-            <button>Remover agendamento</button>
+              <button class="remove">Remover agendamento</button>
+            </div>
           </div>
         </section>
 
-        <section>
-          <div>
+        <section class="boxTurn">
+          <div class="turn">
             <img src="./src/assets/cloud.svg" alt="Cloud" />
             <h3>Tarde</h3>
             <span>13h-18h</span>
           </div>
 
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="boxAppointments">
+            <div class="cardAppointment">
+              <span class="time">13:00</span>
+              <span class="name"><strong>Mel</strong>/João Souza</span>
+              <span class="description">Corte de Unhas</span>
 
-            <button>Remover agendamento</button>
+              <button class="remove">Remover agendamento</button>
+            </div>
+
+            <div class="cardAppointment">
+              <span class="time">14:00</span>
+              <span class="name"><strong>Bella</strong>/Pedro Martins</span>
+              <span class="description">Aplicação de Anti-pulgas</span>
+
+              <button class="remove">Remover agendamento</button>
+            </div>
+
+            <div class="cardAppointment">
+              <span class="time">15:00</span>
+              <span class="name"><strong>Simba</strong>/Juliana Rocha</span>
+              <span class="description">Tosa Higiênica</span>
+
+              <button class="remove">Remover agendamento</button>
+            </div>
           </div>
         </section>
 
-        <section>
-          <div>
+        <section class="boxTurn">
+          <div class="turn">
             <img src="./src/assets/moon.svg" alt="Moon" />
             <h3>Noite</h3>
             <span>19h-21h</span>
           </div>
 
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="boxAppointments">
+            <div class="cardAppointment">
+              <span class="time">20:00</span>
+              <span class="name"><strong>Max</strong>/Camila Santos</span>
+              <span class="description">Limpeza de Dentes</span>
 
-            <button>Remover agendamento</button>
+              <button class="remove">Remover agendamento</button>
+            </div>
           </div>
         </section>
       </article>
 
-      <article>
+      <!-- <article>
         <div>
           <img src="" alt="" />
         </div>
@@ -156,7 +178,7 @@
             <button type="submit">Agendar</button>
           </div>
         </form>
-      </article>
+      </article> -->
     </main>
 
     <div class="newAppointment">
