@@ -42,7 +42,7 @@
   --paragraph-medium: 500 1.4rem/2.4 var(--ff-inter);
   --paragraph-small: 400 1.2rem/1.6 var(--ff-inter);
   --label-large: 700 1.4rem/1.6 var(--ff-inter);
-  --label-medium: 700 1.4rem/2.4 var(--ff-inter);
+  --label-medium: 500 1.2rem/2.4 var(--ff-inter);
   --label-small: 400 1.2rem/1.6 var(--ff-inter);
   --link: 500 1.2rem/1.6 var(--ff-inter);
 }
@@ -59,7 +59,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 2;
 
   display: flex;
   align-items: center;
@@ -74,6 +74,7 @@ body {
 }
 
 .newAppointment {
+      width: 21rem;
   position: fixed;
   bottom: 3rem;
   right: 3rem;
@@ -91,4 +92,12 @@ h3 {
 p {
   font: var(--paragraph-medium);
   color: var(--content-secondary);
+}
+
+fieldset{
+  border: none;
+}
+
+label{
+  font: var(--label-medium);
 }

@@ -35,8 +35,8 @@
             Aqui você pode ver todos os clientes e serviços agendados para hoje.
           </p>
         </div>
-        <div class="searchDate">
-          <input type="date" name="date" id="date" />
+        <div>
+          <input type="date" name="date" id="date" class="searchDate" />
         </div>
       </header>
 
@@ -112,73 +112,83 @@
         </section>
       </article>
 
-      <!-- <article>
-        <div>
-          <img src="" alt="" />
-        </div>
-
-        <div>
-          <h1>Agende um atendimento</h1>
-          <p>Preencha os dados do cliente para realizar o agendamento</p>
-        </div>
-
-        <form>
-          <fieldset>
-            <section>
-              <label for=""></label>
-              <div>
-                <input type="text" />
-                <img src="" alt="" />
-              </div>
-            </section>
-
-            <section>
-              <label for=""></label>
-              <div>
-                <input type="text" />
-                <img src="" alt="" />
-              </div>
-            </section>
-
-            <section>
-              <label for=""></label>
-              <div>
-                <input type="tel" />
-                <img src="" alt="" />
-              </div>
-            </section>
-
-            <section>
-              <label for=""></label>
-              <div>
-                <textarea name="" id=""></textarea>
-              </div>
-            </section>
-          </fieldset>
-
-          <fieldset>
-            <section>
-              <label for=""></label>
-              <div>
-                <input type="date" />
-                <img src="" alt="" />
-              </div>
-            </section>
-
-            <section>
-              <label for=""></label>
-              <div>
-                <input type="time" />
-                <img src="" alt="" />
-              </div>
-            </section>
-          </fieldset>
-
+      <article class="containerNewAppointment">
+        <div class="boxNewAppointment">
           <div>
-            <button type="submit">Agendar</button>
+            <h1>Agende um atendimento</h1>
+            <p>Preencha os dados do cliente para realizar o agendamento:</p>
           </div>
-        </form>
-      </article> -->
+
+          <form>
+            <fieldset>
+              <section>
+                <label for="name">Nome do tutor</label>
+                <div>
+                  <input type="text" id="name" placeholder="Helena Souza" />
+                  <img src="./src/assets/user.svg" alt="User" class="imgType" />
+                </div>
+              </section>
+
+              <section>
+                <label for="namePet">Nome do pet</label>
+                <div>
+                  <input type="text" id="namePet" placeholder="Cheddar" />
+                  <img
+                    src="./src/assets/favicon.svg"
+                    alt="dog"
+                    class="imgType"
+                  />
+                </div>
+              </section>
+
+              <section>
+                <label for="phone">Telefone</label>
+                <div>
+                  <input type="tel" id="phone" placeholder="(00) 0 0000-0000" />
+                  <img
+                    src="./src/assets/phone.svg"
+                    alt="phone"
+                    class="imgType"
+                  />
+                </div>
+              </section>
+
+              <section>
+                <label for="description">Descrição do serviço</label>
+                <div>
+                  <textarea
+                    name="description"
+                    id="description"
+                    placeholder="Banho e tosa"
+                  ></textarea>
+                </div>
+              </section>
+
+              <div>
+                <section>
+                  <label for="date">Data</label>
+                  <div>
+                    <input type="date" id="date" />
+                    <img src="" alt="" />
+                  </div>
+                </section>
+
+                <section>
+                  <label for="hour">Hora</label>
+                  <div>
+                    <input type="time" id="hour" />
+                    <img src="" alt="" />
+                  </div>
+                </section>
+              </div>
+            </fieldset>
+
+            <div class="appointment">
+              <button type="submit">Agendar</button>
+            </div>
+          </form>
+        </div>
+      </article>
     </main>
 
     <div class="newAppointment">

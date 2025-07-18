@@ -11,6 +11,10 @@ main {
   }
 }
 
+.searchDate {
+  width: 18rem;
+}
+
 .containerTurns {
   margin-top: 3.2rem;
   display: flex;

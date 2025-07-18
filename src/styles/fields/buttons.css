@@ -1,4 +1,4 @@
-.newAppointment {
+.newAppointment, .appointment {
   button {
     width: 21rem;
     height: 4.4rem;
@@ -7,11 +7,12 @@
     font: var(--label-large);
     background: var(--content-brand);
     color: var(--background-primary);
-    filter: drop-shadow(0 0 3rem #9282fa50);
-    transition: background 0.5s 100ms ease-in-out;
+    filter: drop-shadow(0 0 3rem transparent);
+    transition: background 0.5s 100ms ease-in-out, filter 0.5s 100ms ease-in-out;
   }
 
   button:hover {
     background: var(--content-brand-hover);
+    filter: drop-shadow(0 0 3rem #9282fa50);
   }
 }
