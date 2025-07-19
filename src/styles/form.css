@@ -4,6 +4,7 @@
   position: fixed;
   background: rgba(255, 255, 255, 1.2rem); /* transparência */
   backdrop-filter: blur(10px);
+  display: none;
   top: 0;
   left: 0;
   z-index: 1;
