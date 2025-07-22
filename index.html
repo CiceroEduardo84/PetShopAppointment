@@ -36,7 +36,7 @@
           </p>
         </div>
         <div>
-          <input type="date" name="date" id="date" class="searchDate" />
+          <input type="date" name="date" id="searchDate" class="searchDate" />
         </div>
       </header>
 
@@ -124,7 +124,7 @@
               <section>
                 <label for="name">Nome do tutor</label>
                 <div>
-                  <input type="text" id="name" placeholder="Helena Souza" />
+                  <input type="text" id="nameTutor" placeholder="Helena Souza" required/>
                   <img src="./src/assets/user.svg" alt="User" class="imgType" />
                 </div>
               </section>
@@ -132,7 +132,7 @@
               <section>
                 <label for="namePet">Nome do pet</label>
                 <div>
-                  <input type="text" id="namePet" placeholder="Cheddar" />
+                  <input type="text" id="namePet" placeholder="Cheddar" required/>
                   <img
                     src="./src/assets/favicon.svg"
                     alt="dog"
@@ -144,7 +144,7 @@
               <section>
                 <label for="phone">Telefone</label>
                 <div>
-                  <input type="tel" id="phone" placeholder="(00) 0 0000-0000" />
+                  <input type="tel" id="phone" placeholder="(00) 0 0000-0000" required/>
                   <img
                     src="./src/assets/phone.svg"
                     alt="phone"
@@ -160,6 +160,7 @@
                     name="description"
                     id="description"
                     placeholder="Banho e tosa"
+                    required
                   ></textarea>
                 </div>
               </section>
@@ -169,7 +170,6 @@
                   <label for="date">Data</label>
                   <div>
                     <input type="date" id="date" />
-                    <img src="" alt="" />
                   </div>
                 </section>
 
@@ -177,7 +177,6 @@
                   <label for="hour">Hora</label>
                   <div>
                     <input type="time" id="hour" />
-                    <img src="" alt="" />
                   </div>
                 </section>
               </div>

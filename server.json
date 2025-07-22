@@ -1,1 +1,36 @@
-{}
+{
+  "appointments": [
+    {
+      "id": 1753224855283,
+      "nameTutor": "Eduardo",
+      "namePet": "Bili",
+      "phone": "(88) 99920-2664",
+      "when": "2025-07-22T03:00:00.000Z",
+      "description": "Banho e tosa"
+    },
+    {
+      "id": 1753225793233,
+      "nameTutor": "Eduardo",
+      "namePet": "Bili",
+      "phone": "(88) 99999-0000",
+      "when": "2025-07-22T03:00:00.000Z",
+      "description": "Banho e tosa"
+    },
+    {
+      "id": 1753225855891,
+      "nameTutor": "Eduardo",
+      "namePet": "Bili",
+      "phone": "(88) 99999-0000",
+      "when": "2025-07-22T03:00:00.000Z",
+      "description": "Banho e tosa"
+    },
+    {
+      "id": 1753225951283,
+      "nameTutor": "Eduardo",
+      "namePet": "Bili",
+      "phone": "(88) 99999-0000",
+      "when": "2025-07-23T03:00:00.000Z",
+      "description": "Banho e tosa"
+    }
+  ]
+}
