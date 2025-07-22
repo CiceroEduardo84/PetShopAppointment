@@ -38,7 +38,7 @@ fieldset > div {
 }
 
 section {
-  div {
+  .boxInput {
     position: relative;
     display: flex;
     align-items: center;
