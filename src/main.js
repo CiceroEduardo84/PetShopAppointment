@@ -8,3 +8,4 @@ import "./styles/index.css";
 
 //JS
 import "./modules/form/showform.js";
+import "./modules/form/submitForm.js";
