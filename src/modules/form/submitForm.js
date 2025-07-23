@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
-import { newAppointment } from "../../Services/newAppoitment.js";
+import { newAppointment } from "../../Services/newAppointment.js";
 import { hideBoxAppointment } from "./showform.js";
 
 const form = document.querySelector("form");
