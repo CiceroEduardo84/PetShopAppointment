@@ -1,6 +1,7 @@
 import dayjs from "dayjs";
 import { newAppointment } from "../../Services/newAppointment.js";
 import { hideBoxAppointment } from "./showform.js";
+import { appointmentsDays } from "../appointments/load.js";
 
 const form = document.querySelector("form");
 const nameT = document.getElementById("nameTutor");
@@ -45,9 +46,16 @@ form.onsubmit = async (event) => {
     }
 
     // recupere somente a hora
-    const [hour] = selectHours.innerText.split(":");
+    const [hour, minute] = selectHours.value.split(":");
 
-    const when = dayjs(selectedDate.value).add(hour, "hour");
+    const when = dayjs(selectedDate.value)
+      .add(hour, "hour")
+      .add(minute, "minute");
+
+    console.log(selectHours.value);
+
+    console.log(hour);
+    console.log(when);
 
     //Gera um ID
     const id = new Date().getTime();
@@ -61,6 +69,8 @@ form.onsubmit = async (event) => {
       when,
       description,
     });
+
+    await appointmentsDays();
 
     nameT.value = "";
     nameP.value = "";
