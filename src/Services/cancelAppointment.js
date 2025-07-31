@@ -1,6 +1,6 @@
 import { ApiConfig } from "./api";
 
-export async function cancelAppointment(id) {
+export async function cancelAppointment({id}) {
   try {
     // Cancel appointment using method DELETE
     await fetch(`${ApiConfig.baseURL}/appointments/${id}`, {
