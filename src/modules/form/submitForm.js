@@ -52,11 +52,6 @@ form.onsubmit = async (event) => {
       .add(hour, "hour")
       .add(minute, "minute");
 
-    console.log(selectHours.value);
-
-    console.log(hour);
-    console.log(when);
-
     //Gera um ID
     const id = new Date().getTime();
 
