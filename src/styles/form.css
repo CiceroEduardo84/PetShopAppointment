@@ -25,7 +25,7 @@
 fieldset {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 1.6rem;
 }
 
 fieldset > div {
@@ -65,5 +65,54 @@ section {
   button {
     width: 12rem;
     height: 4rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .containerNewAppointment {
+    padding-inline: 2rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .boxNewAppointment {
+      position: relative;
+      width: 100%;
+      margin: 7.6rem auto;
+      padding: 4rem 2rem;
+    }
+
+    .close {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+
+  fieldset > div {
+    flex-direction: column;
+
+    section {
+      width: 100%;
+    }
+  }
+
+  .appointment {
+    text-align: end;
+    margin-top: 1rem;
+
+    button {
+      width: 12rem;
+      height: 4rem;
+    }
   }
 }

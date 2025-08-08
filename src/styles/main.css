@@ -96,9 +96,71 @@ main {
       background: none;
       border: none;
     }
+
+    .remove:hover {
+      text-decoration: underline;
+      color: var(--content-primary);
+    }
   }
 
   .cardAppointment:last-child {
     border-bottom: none;
+  }
+}
+
+@media (max-width: 390px) {
+  main {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 5.7rem 2rem 1.2rem;
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+    }
+  }
+
+  .boxAppointments {
+    padding: 2rem 0;
+    gap: 1.6rem;
+
+    .cardAppointment {
+      height: max-content;
+      grid-template-areas:
+        "A B"
+        "C C"
+        "D D";
+      grid-template-columns: 4.5rem 1fr;
+      grid-template-rows: max-content;
+      padding: 1.2rem;
+      gap: 0.8rem;
+
+      .time {
+        grid-area: A;
+        font: var(--label-medium);
+      }
+
+      .name,
+      .description {
+        font: var(--paragraph-medium);
+      }
+
+      .name {
+        strong {
+          font: var(--label-medium);
+        }
+      }
+
+      .remove {
+        width: 50%;
+        text-align: end;
+        margin-left: 50%;
+        grid-area: D;
+        background: none;
+        border: none;
+      }
+    }
   }
 }

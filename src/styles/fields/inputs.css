@@ -37,7 +37,7 @@ input[type="date"],
 input[type="time"] {
   position: relative;
   text-align: left;
- padding-inline-start: 3.2rem ;
+  padding-inline-start: 3.2rem;
 
   &::after {
     content: "";

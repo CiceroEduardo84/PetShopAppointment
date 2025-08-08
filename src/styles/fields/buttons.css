@@ -1,4 +1,5 @@
-.newAppointment, .appointment {
+.newAppointment,
+.appointment {
   button {
     width: 21rem;
     height: 4.4rem;
@@ -14,5 +15,14 @@
   button:hover {
     background: var(--content-brand-hover);
     filter: drop-shadow(0 0 3rem #9282fa50);
+  }
+}
+
+@media (max-width: 390px) {
+  .newAppointment {
+    button {
+      display: block;
+      margin: auto;
+    }
   }
 }
